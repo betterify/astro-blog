@@ -1,5 +1,5 @@
 {
-  "name": "astro-blog",
+  "name": "storyteller",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,9 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.9.0",
     "daisyui": "^5.5.14",
-    "tailwindcss": "^4.1.18"
+    "partytown": "^0.0.0",
+    "tailwindcss": "^4.1.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19"
   }
 }
