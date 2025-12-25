@@ -2,7 +2,7 @@
 title: "Modern JavaScript: ES2024 Features Every Developer Should Know"
 description: "Explore the latest JavaScript features from ES2024 and how they can improve your code quality and developer experience."
 pubDate: 2025-05-12
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "JavaScript"
 tags: ["javascript", "es2024", "frontend", "language-features", "modern-js"]
 featured: false

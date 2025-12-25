@@ -2,7 +2,7 @@
 title: "How to Build a Minimal Blog with Astro"
 description: "A comprehensive guide to creating a clean, fast blog using Astro's static site generation capabilities."
 pubDate: 2025-06-01
-author: "The Storyteller"
+author: "Advaita"
 category: "Web Dev"
 tags: ["astro", "web development", "static sites"]
 featured: true

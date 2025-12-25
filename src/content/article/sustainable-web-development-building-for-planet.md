@@ -2,7 +2,7 @@
 title: "Sustainable Web Development: Building for the Planet"
 description: "Learn how to create environmentally conscious websites and applications that minimize digital carbon footprint."
 pubDate: 2025-05-10
-author: "The Storyteller"
+author: "Advaita"
 category: "Sustainability"
 tags: ["sustainability", "green-tech", "performance", "eco-friendly", "web-development"]
 featured: true

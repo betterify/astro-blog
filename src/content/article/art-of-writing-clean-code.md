@@ -2,7 +2,7 @@
 title: "The Art of Writing Clean Code"
 description: "Principles and practices for writing maintainable, readable code that stands the test of time."
 pubDate: 2025-05-05
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Coding"
 tags: ["development", "best practices", "software"]
 featured: false

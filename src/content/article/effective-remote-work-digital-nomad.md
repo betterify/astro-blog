@@ -2,7 +2,7 @@
 title: "Effective Remote Work: Lessons from the Digital Nomad Life"
 description: "Hard-won insights on productivity, communication, and work-life balance from years of working remotely across different time zones and cultures."
 pubDate: 2025-01-05
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Lifestyle"
 tags: ["remote work", "productivity", "digital nomad", "work-life balance"]
 featured: false

@@ -2,7 +2,7 @@
 title: "TypeScript for Better Development"
 description: "How TypeScript transforms JavaScript development with type safety, better tooling, and improved code quality."
 pubDate: 2025-04-15
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Programming"
 tags: ["typescript", "javascript", "development", "tools"]
 featured: true

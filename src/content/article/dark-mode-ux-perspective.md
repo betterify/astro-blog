@@ -2,7 +2,7 @@
 title: "Dark Mode: A UX Perspective"
 description: "Understanding the user experience implications of dark mode and how to implement it thoughtfully."
 pubDate: 2025-05-18
-author: "The Storyteller"
+author: "Advaita"
 category: "Coding"
 tags: ["dark mode", "ux design", "accessibility"]
 featured: true

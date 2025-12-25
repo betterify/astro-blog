@@ -2,7 +2,7 @@
 title: "Building Scalable Microservices: Lessons from the Trenches"
 description: "Real-world insights and practical lessons learned from building and maintaining microservices at scale."
 pubDate: 2025-05-15
-author: "The Storyteller"
+author: "Advaita"
 category: "Architecture"
 tags: ["microservices", "scalability", "architecture", "devops", "distributed-systems"]
 featured: false

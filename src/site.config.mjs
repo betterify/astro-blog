@@ -1,7 +1,7 @@
 export default {
-    siteTitle: "Astrofy", // Main site title displayed in header
+    siteTitle: "Advaita", // Main site title displayed in header
     siteSubTitle: "", // Subtitle shown under main title
-    copyright: "© 2025 Astrofy. All Rights Reserved.", // Footer copyright text
+    copyright: "© 2025 Advaita. All Rights Reserved.", // Footer copyright text
     showAuthorsOnHomePage: false, // Display author info on homepage
     showFeaturrdPostsOnHomePage: true, // Show featured posts section on homepage
     showCategoryOnPosts: true, // Display categories on posts in homepage
@@ -28,7 +28,7 @@ export default {
         nextText: "Next", // Text for next page button
         postLabel: "posts", // Label used in pagination info (e.g., "8 posts")
     },
-    defaultAuthorName: "Hasin Hayder",
+    defaultAuthorName: "Avadhoot Dandekar",
     showCategoriesLinkOnFooter: true, // Show Categories link in footer
     showTagsLinkOnFooter: true, // Show Tags link in footer
     showAuthorsLinkOnFooter: true, // Show Authors link in footer

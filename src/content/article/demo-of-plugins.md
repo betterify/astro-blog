@@ -2,7 +2,7 @@
 title: "Rich Media Embeds: YouTube, Vimeo, Maps, PDFs & More"
 description: "Complete guide to Storyteller's embed system - integrate YouTube, Vimeo, Maps, PDFs, Gists, and more with simple markdown shortcodes."
 pubDate: 2025-11-06
-author: "The Storyteller"
+author: "Advaita"
 category: "Web Dev"
 tags: ["astro", "plugins", "embeds", "markdown", "demo"]
 featured: true

@@ -1,6 +1,6 @@
 /**
  * Vimeo Embed Plugin
- * Author: Hasin Hayder
+ * Author: Avadhoot Dandekar
  * URL: https://github.com/hasinhayder/storyteller-astro
  *
  * Usage:

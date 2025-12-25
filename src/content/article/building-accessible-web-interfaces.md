@@ -2,7 +2,7 @@
 title: "Building Accessible Web Interfaces"
 description: "A comprehensive guide to creating web interfaces that work for everyone, including users with disabilities."
 pubDate: 2025-02-28
-author: "The Storyteller"
+author: "Advaita"
 category: "Web Dev"
 tags: ["accessibility", "a11y", "web development", "inclusive design"]
 featured: true

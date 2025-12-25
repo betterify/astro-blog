@@ -2,7 +2,7 @@
 title: "The Art of API Design: Building Developer-Friendly Interfaces"
 description: "Explore the principles and best practices for designing APIs that developers love to use and integrate with."
 pubDate: 2025-05-18
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "API Design"
 tags: ["api", "rest", "design", "developer-experience", "backend"]
 featured: true

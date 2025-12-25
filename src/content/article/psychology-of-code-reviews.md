@@ -2,7 +2,7 @@
 title: "The Psychology of Code Reviews"
 description: "Understanding the human side of code reviews and how to make them more effective and less stressful for everyone involved."
 pubDate: 2025-03-20
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Team Culture"
 tags: ["code review", "team dynamics", "psychology", "collaboration"]
 featured: false

@@ -2,7 +2,7 @@
 title: "Monochrome UI: Less is More"
 description: "Exploring the power of monochrome design in creating elegant, focused user interfaces."
 pubDate: 2025-05-28
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Design"
 tags: ["ui design", "minimalism", "color theory", "css"]
 featured: true

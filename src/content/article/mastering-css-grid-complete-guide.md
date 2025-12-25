@@ -2,7 +2,7 @@
 title: "Mastering CSS Grid: A Complete Guide"
 description: "Learn how to create complex, responsive layouts with CSS Grid - the most powerful layout system in CSS."
 pubDate: 2025-05-20
-author: "Hasin Hayder"
+author: "Avadhoot Dandekar"
 category: "Web Dev"
 tags: ["css", "grid", "layout", "responsive", "frontend"]
 featured: false
