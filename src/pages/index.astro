@@ -21,12 +21,13 @@ const showCategory = SiteOptions.showCategoryOnPosts || false
 
 <BlogLayout title=`${SiteOptions.siteTitle}`>
   <Header />
-<!-- Start Hero -->
+<!-- Start Hero --> 
 <div class="hero bg-base-200 min-h-screen">
   <div class="hero-content flex-col lg:flex-row-reverse">
+    <!-- Desktop Image (hidden on small screens) -->
     <img
       src="/images/Avadhoot Dandekar.png"
-      class="w-full h-auto rounded-lg shadow-2xl" alt="Profile"
+      class="w-full h-auto object-cover rounded-lg shadow-2xl" alt="Profile"
     />
     <div>
       <h1 class="text-4xl font-bold">Welcome to Advaita!</h1>
