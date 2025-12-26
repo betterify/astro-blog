@@ -11,22 +11,27 @@ import remarkGistEmbed from './src/plugins/remarkGistEmbed.js'
 import remarkAscinemaEmbed from './src/plugins/remarkAscinemaEmbed.js';
 import remarkSoundcloudEmbed from './src/plugins/remarkSoundcloudEmbed.js';
 
+import expressiveCode from 'astro-expressive-code';
+
 // https://astro.build/config
 export default defineConfig({
-    vite: {
-        plugins: [tailwindcss()]
-    },
-    markdown: {
-        remarkPlugins: [
-            remarkYoutubeEmbed,
-            remarkVimeoEmbed,
-            remarkWistiaEmbed,
-            remarkGoogleMapsEmbed,
-            remarkIframeEmbed,
-            remarkPdfEmbed,
-            remarkGistEmbed,
-            remarkAscinemaEmbed,
-            remarkSoundcloudEmbed,
-        ],
-    },
+  vite: {
+      plugins: [tailwindcss()]
+  },
+
+  markdown: {
+      remarkPlugins: [
+          remarkYoutubeEmbed,
+          remarkVimeoEmbed,
+          remarkWistiaEmbed,
+          remarkGoogleMapsEmbed,
+          remarkIframeEmbed,
+          remarkPdfEmbed,
+          remarkGistEmbed,
+          remarkAscinemaEmbed,
+          remarkSoundcloudEmbed,
+      ],
+  },
+
+  integrations: [expressiveCode()],
 });

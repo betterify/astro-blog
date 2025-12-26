@@ -30,7 +30,7 @@ const showCategory = SiteOptions.showCategoryOnPosts || false
       class="w-full h-auto object-cover rounded-lg shadow-2xl" alt="Profile"
     />
     <div>
-      <h1 class="text-4xl font-bold">Welcome to Advaita!</h1>
+      <h1 class="text-4xl font-bold">Welcome to <span class="markcyan">Advaita!</span></h1>
       <p class="py-6">
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
@@ -48,7 +48,7 @@ const showCategory = SiteOptions.showCategoryOnPosts || false
   {
     SiteOptions.showFeaturrdPostsOnHomePage && featuredPosts.length > 0 && (
       <section class="mb-16">
-        {SiteOptions.labels.featuredPosts && <h2 class="text-2xl font-semibold mb-8 text-center">{SiteOptions.labels.featuredPosts}</h2>}
+        {SiteOptions.labels.featuredPosts && <h2 class="text-2xl font-semibold mb-8 text-center markorange">{SiteOptions.labels.featuredPosts}</h2>}
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuredPosts.map((post) => (
             <FeaturedCard post={post} />
@@ -61,7 +61,7 @@ const showCategory = SiteOptions.showCategoryOnPosts || false
 
   <!-- Latest Blog Posts -->
   <section>
-    {SiteOptions.labels.latestPosts && <h2 class="text-2xl font-semibold mb-8 text-center">{SiteOptions.labels.latestPosts}</h2>}
+    {SiteOptions.labels.latestPosts && <h2 class="text-2xl font-semibold mb-8 text-center markblue">{SiteOptions.labels.latestPosts}</h2>}
     <ul class="space-y-4">
       {latestPosts.map((post) => <PostCard post={post} showCategory={showCategory} />)}
     </ul>

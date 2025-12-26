@@ -7,3 +7,37 @@ code > span.line {
   color: #e2e8f0; /* slate-200 */
 }
 
+.markcyan {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #60d0ff 65%);      
+   display: inline;
+}
+
+.markred {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FF0000 65%);      
+   display: inline;
+}
+
+.markorange {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FF5533 65%);      
+   display: inline;
+}
+
+.markyellow {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FFFF00 65%);      
+   display: inline;
+}
+
+.markgreen {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #00D100 65%);      
+   display: inline;
+}
+
+.markblue {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #0000FF 65%);      
+   display: inline;
+}
+
+.markpurple {
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FF00FF 65%);      
+   display: inline;
+}
