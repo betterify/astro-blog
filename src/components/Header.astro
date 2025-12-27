@@ -1,5 +1,6 @@
 ---
 import SiteOptions from "../site.config.mjs";
+import { Toggle } from "astro-theme-toggle/components";
 export interface Props {
   showTitle?: boolean;
 }
@@ -26,8 +27,10 @@ const { showTitle = true } = Astro.props;
     }
   </a> --><!-- </header> -->
 <header>
-  <div class="navbar bg-base-100 dark:bg-base-200 justify-center shadow-sm">
-    <div class="navbar-start">
+  <div
+    class="navbar bg-base-100 dark:bg-base-200 shadow-sm w-full grid grid-cols-[1fr_auto_1fr] items-center px-2"
+  >
+    <div class="justify-self-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
           <svg
@@ -54,26 +57,8 @@ const { showTitle = true } = Astro.props;
         </ul>
       </div>
     </div>
-    <div class="navbar-center items-center justify-center">
-      <!-- <a href="/" class="btn btn-ghost text-xl flex items-center space-x-1">
-        <img
-          src="/images/logo.svg"
-          alt="Logo"
-          class="w-12 h-12 rounded-full hover:opacity-80 transition-opacity"
-        />
-        {
-          showTitle && (
-            <>
-              <h1 class="max-[380px]:hidden bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent text-4xl font-bold tracking-tight text-center hover:opacity-80 transition-opacity h-12">
-                {SiteOptions.siteTitle}
-              </h1>
-              <p class="text-lg text-gray-500 dark:text-gray-400 font-light text-center">
-                {SiteOptions.siteSubTitle}
-              </p>
-            </>
-          )
-      }
-      </a> -->
+
+    <div class="justify-self-center">
       <a href="/" class="flex items-center space-x-2">
         <!-- Logo Image -->
         <img
@@ -89,7 +74,8 @@ const { showTitle = true } = Astro.props;
         >
       </a>
     </div>
-    <div class="navbar-end">
+
+    <div class="justify-self-end flex items-center gap-2">
       <button class="btn btn-ghost btn-circle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -106,43 +92,80 @@ const { showTitle = true } = Astro.props;
         </svg>
       </button>
 
-      <button
-        class="btn btn-ghost btn-circle relative overflow-hidden"
-        onclick="toggleTheme(event)"
-        id="theme-toggle-button"
-        aria-label="Toggle theme"
-      >
-        <svg
-          id="sun-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-5 h-5 hidden"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-          ></path>
-        </svg>
-        <svg
-          id="moon-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-5 h-5 hidden"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-          ></path>
-        </svg>
-      </button>
+      <div class="btn btn-ghost btn-circle">
+        <Toggle class="w-full h-full grid place-items-center">
+          <Fragment slot="icon-light">
+            <svg
+              id="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              ></path>
+            </svg>
+          </Fragment>
+          <Fragment slot="icon-dark">
+            <svg
+              id="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              ></path>
+            </svg>
+          </Fragment>
+        </Toggle>
+      </div>
     </div>
   </div>
 </header>
+
+<style is:global>
+  /* Force the custom element to be a grid and center its content */
+  astro-theme-toggle {
+    display: grid !important;
+    place-items: center !important;
+  }
+
+  /* Light Icon: Visible (Grid) by default, Hidden in Dark Mode */
+  astro-theme-toggle .astro-theme-toggle-icon-light {
+    display: grid !important;
+    place-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  :root.dark astro-theme-toggle .astro-theme-toggle-icon-light {
+    display: none !important;
+  }
+
+  /* Dark Icon: Hidden by default, Visible (Grid) in Dark Mode */
+  astro-theme-toggle .astro-theme-toggle-icon-dark {
+    display: none !important;
+    place-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  :root.dark astro-theme-toggle .astro-theme-toggle-icon-dark {
+    display: grid !important;
+  }
+
+  /* Ensure the SVGs themselves are centered if they aren't already */
+  astro-theme-toggle svg {
+    display: block;
+    margin: auto;
+  }
+</style>

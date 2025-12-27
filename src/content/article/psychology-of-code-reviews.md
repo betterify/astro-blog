@@ -12,7 +12,7 @@ tags:
   - psychology
   - collaboration
 featured: false
-draft: false
+draft: true
 ---
 Code reviews are one of the most important practices in software development, yet they're often a source of stress, conflict, and misunderstanding. Understanding the psychology behind code reviews can transform them from dreaded obligations into powerful tools for team growth and code quality.
 

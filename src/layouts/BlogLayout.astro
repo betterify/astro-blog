@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css"
 import SiteOptions from "../site.config.mjs"
+import { ThemeScript } from "astro-theme-toggle/components"
+import Header from "../components/Header.astro"
 
 export interface Props {
   title: string
@@ -26,15 +28,8 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
     <meta name="twitter:description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-    <script is:inline>
-      // Theme initialization - prevents FOUC
-      ;(() => {
-        const theme = localStorage.getItem("theme") ?? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    <ThemeScript />
 
-        document.documentElement.classList.toggle("dark", theme === "dark")
-        document.documentElement.setAttribute("data-theme", theme)
-      })()
-    </script>
     {SiteOptions.gTag && (
       <script
         data-category="analytics"
@@ -57,6 +52,10 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
 
   <body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300 min-h-full">
     <!-- <div class="w-full bg-black h-3"></div> -->
+
+    <div class="max-w-[1100px] mx-auto px-4 w-full">
+      <Header />
+    </div>
 
     <main class={`max-w-[1100px] mx-auto px-4`}>
       <slot />

@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
-import Header from "../../components/Header.astro";
+
 import Footer from "../../components/Footer.astro";
 import PostCard from "../../components/PostCard.astro";
 import SiteOptions from "../../site.config.mjs";
@@ -37,8 +37,6 @@ const { author, posts } = Astro.props;
   title={`${author} - ${SiteOptions.siteTitle}`}
   description={`Articles written by ${author}`}
 >
-  <Header showTitle={false} />
-
   <!-- Light Horizontal Bar -->
   <hr class="border-t border-gray-200 dark:border-gray-700 my-8" />
 

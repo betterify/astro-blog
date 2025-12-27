@@ -1,13 +1,13 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content"
 import BlogLayout from "../../layouts/BlogLayout.astro"
-import Header from "../../components/Header.astro"
+
 import Footer from "../../components/Footer.astro"
 import FeaturedCard from "../../components/FeaturedCard.astro"
 import SiteOptions from "../../site.config.mjs"
 
 export async function getStaticPaths() {
-  const posts = await getCollection("article")
+  const posts = (await getCollection("article")).filter((post) => !post.data.draft)
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,
@@ -32,7 +32,7 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 ---
 
 <BlogLayout title={title} description={description}>
-  <Header showTitle={true} />
+
 
   <!-- Light Horizontal Bar -->
   <hr class="border-t border-gray-200 dark:border-gray-700 my-8" />
