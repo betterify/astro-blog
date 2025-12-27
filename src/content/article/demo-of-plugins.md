@@ -8,6 +8,7 @@ tags: ["astro", "plugins", "embeds", "markdown", "demo"]
 featured: true
 thumb: "https://images.unsplash.com/photo-1567606404839-dea8cec4d278?auto=format&fit=crop&w=400&q=80"
 large: "https://images.unsplash.com/photo-1567606404839-dea8cec4d278?auto=format&fit=crop&w=2400&q=80"
+draft: true
 ---
 
 Welcome to the comprehensive showcase of Storyteller's rich media embed capabilities! This article demonstrates how to seamlessly integrate various types of content into your blog posts using simple markdown shortcodes. From videos and maps to documents and code snippets, Storyteller makes embedding rich media effortless.

@@ -15,23 +15,26 @@ import expressiveCode from 'astro-expressive-code';
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-      plugins: [tailwindcss()]
-  },
+    vite: {
+        plugins: [tailwindcss()]
+    },
 
-  markdown: {
-      remarkPlugins: [
-          remarkYoutubeEmbed,
-          remarkVimeoEmbed,
-          remarkWistiaEmbed,
-          remarkGoogleMapsEmbed,
-          remarkIframeEmbed,
-          remarkPdfEmbed,
-          remarkGistEmbed,
-          remarkAscinemaEmbed,
-          remarkSoundcloudEmbed,
-      ],
-  },
+    markdown: {
+        remarkPlugins: [
+            remarkYoutubeEmbed,
+            remarkVimeoEmbed,
+            remarkWistiaEmbed,
+            remarkGoogleMapsEmbed,
+            remarkIframeEmbed,
+            remarkPdfEmbed,
+            remarkGistEmbed,
+            remarkAscinemaEmbed,
+            remarkSoundcloudEmbed,
+        ],
+    },
 
-  integrations: [expressiveCode()],
+    integrations: [expressiveCode({
+        themes: ['dracula', 'github-light'],
+        themeCssSelector: (theme) => `[data-theme="${theme.type === 'dark' ? 'dark' : 'light'}"]`
+    })],
 });
