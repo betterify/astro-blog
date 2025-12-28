@@ -12,6 +12,7 @@ import remarkAscinemaEmbed from './src/plugins/remarkAscinemaEmbed.js';
 import remarkSoundcloudEmbed from './src/plugins/remarkSoundcloudEmbed.js';
 
 import expressiveCode from 'astro-expressive-code';
+import pagefind from "astro-pagefind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,9 +33,9 @@ export default defineConfig({
             remarkSoundcloudEmbed,
         ],
     },
-
+    
     integrations: [expressiveCode({
         themes: ['dracula', 'github-light'],
         themeCssSelector: (theme) => `[data-theme="${theme.type === 'dark' ? 'dark' : 'light'}"]`
-    })],
+    }), pagefind()], 
 });

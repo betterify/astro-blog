@@ -3,6 +3,7 @@ import "../styles/global.css"
 import SiteOptions from "../site.config.mjs"
 import { ThemeScript } from "astro-theme-toggle/components"
 import Header from "../components/Header.astro"
+import Pagefind from "../components/PageFind.astro"
 
 export interface Props {
   title: string
@@ -13,7 +14,7 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
 ---
 
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="en" class="w-full h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -27,6 +28,10 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- PageFind -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script is:inline type="module" src="/pagefind/pagefind.js"></script>
+    <script is:inline type="module" src="/pagefind/pagefind-ui.js"></script>
     <title>{title}</title>
     <ThemeScript />
 
@@ -39,6 +44,7 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
       ></script>
 
       <script data-category="analytics" is:inline type="text/partytown" define:vars={{gTag: SiteOptions.gTag}}>
+        // @ts-nocheck
         window.dataLayer = window.dataLayer || [];
         function gtag() {
           dataLayer.push(arguments);
@@ -50,16 +56,19 @@ const { title = SiteOptions.siteTitle, description = SiteOptions.siteSubTitle } 
     )}
   </head>
 
-  <body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300 min-h-full">
+  <body class="bg-white text-gray-900 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300 min-h-full w-full">
     <!-- <div class="w-full bg-black h-3"></div> -->
 
-    <div class="max-w-[1100px] mx-auto px-4 w-full">
+    <!-- <div class="max-w-[1100px] mx-auto px-4 w-full"> -->
+     <div class="mx-auto px-4 w-full">
       <Header />
     </div>
 
-    <main class={`max-w-[1100px] mx-auto px-4`}>
+    <!-- <main class={`max-w-[1100px] mx-auto px-4`}> -->
+    <main class={`mx-auto px-4 w-full`}>
       <slot />
     </main>
+    <Pagefind />
 
     <script is:inline src="/scripts/theme-toggle.js"></script>
   </body>
