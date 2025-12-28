@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from "@tailwindcss/vite";
 import remarkYoutubeEmbed from './src/plugins/remarkYoutubeEmbed.js'
 import remarkVimeoEmbed from './src/plugins/remarkVimeoEmbed.js'
 import remarkWistiaEmbed from './src/plugins/remarkWistiaEmbed.js'
@@ -17,7 +16,6 @@ import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
     vite: {
-        plugins: [tailwindcss()],
         ssr: {
             external: ["svgo"],
         },
