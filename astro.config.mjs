@@ -17,7 +17,10 @@ import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
     vite: {
-        plugins: [tailwindcss()]
+        plugins: [tailwindcss()],
+        ssr: {
+            external: ["svgo"],
+        },
     },
 
     markdown: {
