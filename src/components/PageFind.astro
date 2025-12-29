@@ -9,7 +9,7 @@
   >
     <div
       id="pagefind-container"
-      class="m-0 flex h-fit max-h-[80%] w-full max-w-(--breakpoint-sm) flex-col overflow-auto rounded-sm border border-black/15 bg-neutral-100 p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-neutral-900"
+      class="m-0 flex h-fit max-h-[80%] w-full max-w-(--breakpoint-sm) flex-col overflow-auto rounded-sm border border-blue-400 bg-neutral-100 p-2 px-4 py-3 shadow-lg dark:border-blue-400 dark:bg-neutral-900"
     >
       <div id="search" data-pagefind-ui data-pagefind-default-threshold="0.1"></div>
       <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
@@ -181,4 +181,17 @@
     padding: 0;
     padding-bottom: 0.75rem;
   }
+
+.pagefind-ui__search-input {
+  border: 2px solid #cccccc; /* Default border style */
+}
+
+/* In your custom CSS file or a style block */
+.pagefind-ui__search-input:focus {
+  /* It is recommended to keep a focus indicator for accessibility */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 0 1px #42A5F5; /* Add a custom, accessible focus ring */
+  border-color: #42A5F5; /* Change the border color to match */
+}
+
 </style>
