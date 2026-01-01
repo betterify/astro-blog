@@ -21,7 +21,7 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 <li
   class="flex flex-col sm:flex-row justify-between items-center sm:items-center text-center sm:text-left py-4 border-b border-gray-100 dark:border-gray-800"
 >
-  <div class="mb-2 sm:mb-0">
+  <div class="mb-2 sm:mb-0 hover:bg-blue-400">
     <a
       href={`/article/${post.slug}`}
       class="text-xl font-medium hover:underline"
@@ -50,6 +50,7 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
         </p>
       )
     }
+    
   </div>
   <span class="text-sm text-gray-400 dark:text-gray-500">{formattedDate}</span>
 </li>

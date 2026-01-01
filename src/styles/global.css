@@ -8,7 +8,6 @@ code>span.line {
    /* slate-200 */
 }
 
-
 .markcyan {
    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #3cbefc 65%);
    display: inline;
@@ -43,3 +42,5 @@ code>span.line {
    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FF00FF 65%);
    display: inline;
 }
+
+ 
