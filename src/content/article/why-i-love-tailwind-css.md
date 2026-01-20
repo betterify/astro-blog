@@ -1,13 +1,17 @@
 ---
-title: "Why I Love Tailwind CSS"
-description: "A deep dive into the utility-first CSS framework and its benefits for rapid development."
-pubDate: 2025-05-20
-author: "Advaita"
-category: "CSS"
-tags: ["tailwind", "css", "web development"]
+title: Why I Love Tailwind CSS
+description: >-
+  A deep dive into the utility-first CSS framework and its benefits for rapid
+  development.
+pubDate: '2025-05-20T00:00:00.000Z'
+author: Advaita
+category: CSS
+tags:
+  - tailwind
+  - css
+  - web development
 featured: false
 ---
-
 When I first heard about Tailwind CSS, I was skeptical. "Utility classes? Isn't that just inline styles with extra steps?" I thought. But after giving it a fair try, I'm completely converted. Here's why Tailwind has become my go-to CSS framework.
 
 ## The Utility-First Approach
@@ -143,4 +147,4 @@ Tailwind works beautifully with component-based frameworks. You get the benefits
 
 Tailwind CSS has fundamentally changed how I approach styling. It's faster, more consistent, and more maintainable than any approach I've used before. The learning curve is worth it for the productivity gains alone.
 
-If you haven't tried Tailwind yet, I encourage you to give it a real chance. Start with a small project and see how it feels. You might be surprised by how much you enjoy it.
+**If you haven't tried Tailwind yet, I encourage you to give it a real chance. Start with a small project and see how it feels. You might be surprised by how much you enjoy it.**
